@@ -240,8 +240,8 @@ That's the README file for the clustering module script.
 
 
 
-```
-# Scheduling Module Unit Test
+
+## Scheduling Module Unit Test
 
 This repository contains a unit test script for the `time_scheduling_function` in the `scheduling_module`. The unit test script is written in Python using the `unittest` framework.
 
