@@ -5,9 +5,9 @@ I developed a Micro service for the task of clustering trucks or delivery vehice
 It is based on Kafka message broker, Redis data base and Python.
 I have to add many explanation so that a user could digest what was in my mind when I formulate and wrote such things.
 
-Certainly! Here's a README file that provides an overview of the code and instructions for using it:
+I added these explanations here so you can take a look.
 
-# Kafka Message Publisher
+# Kafka Message Publisher (dummy producer)
 
 This script allows you to publish messages to a Kafka topic using the `kafka-python` library.
 
