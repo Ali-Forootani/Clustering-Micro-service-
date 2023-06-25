@@ -72,4 +72,78 @@ That's it! You have successfully used the Kafka Message Publisher script to publ
 
 Feel free to modify the code according to your specific needs and extend it further if required.
 
+
+Certainly! Here's a README file that provides an overview of the code and instructions for using it:
+
+# Kafka Consumer Clustering Service
+
+This script utilizes the Faust library to consume messages from a Kafka topic, retrieve input data from Redis, and perform clustering on the received data.
+
+## Prerequisites
+
+- Python 3.x
+- `faust` library
+- `redis` library
+- Kafka broker
+- Redis server
+
+## Installation
+
+1. Make sure you have Python 3.x installed on your system. You can download Python from the official website: https://www.python.org/downloads/
+
+2. Install the required libraries using pip:
+
+   ```
+   pip install faust redis
+   ```
+
+3. Ensure you have a running Kafka broker. You can follow the Kafka documentation to set up Kafka locally: https://kafka.apache.org/quickstart
+
+4. Set up a Redis server. You can download and install Redis from the official website: https://redis.io/download
+
+## Usage
+
+1. Open the `consumer_clustering_service.py` file in a text editor.
+
+2. Modify the following variables at the beginning of the script to configure the Redis connection:
+
+   ```python
+   redis_host = 'localhost'
+   redis_port = 6379
+   ```
+
+   Update `redis_host` and `redis_port` with the appropriate values according to your Redis server configuration.
+
+3. Implement the `process_packet_list` function in the `clustering_module` module according to your clustering logic. Uncomment the following line in the script:
+
+   ```python
+   # from clustering_module import process_packet_list
+   ```
+
+   Ensure that the `process_packet_list` function is correctly defined in the `clustering_module.py` file.
+
+4. Save the file.
+
+5. Open a terminal or command prompt and navigate to the directory where the `consumer_clustering_service.py` file is located.
+
+6. Run the Faust worker using the following command:
+
+   ```
+   faust -A consumer_clustering_service -l info worker --web-port=6069
+   ```
+
+   Replace `consumer_clustering_service` with the name of your Python file containing the Faust application.
+
+   The Faust worker will start, connect to the Kafka broker, consume messages from the specified Kafka topic, retrieve the input data from Redis, and perform clustering on the received data.
+
+7. Ensure that the Kafka topic `'clustering_request'` exists and contains messages to be consumed.
+
+8. Verify the clustering results. The script currently prints the clustering ID labels obtained from the `process_packet_list` function. Modify the script as needed to store or further process the clustering results.
+
+That's it! You have successfully set up and run the Kafka Consumer Clustering Service script.
+
+Feel free to customize the code according to your specific requirements, including modifying the Redis connection details, implementing the clustering logic, and handling the clustering results.
+
+Note: Ensure that your Kafka broker and Redis server are running and properly configured before executing the script.
+
 Note: Make sure your Kafka broker is running and the specified topics exist before executing the script.
