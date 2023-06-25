@@ -5,7 +5,7 @@ I developed a Micro service for the task of clustering trucks or delivery vehice
 It is based on Kafka message broker, Redis data base and Python.
 I have to add many explanation so that a user could digest what was in my mind when I formulate and wrote such things.
 
-I added these explanations here so you can take a look.
+I added these explanations here for some modules so you can take a look. Generally the producer send a message to consumer and the consumer calls clustering module! then based on the requests it applies clustering techniques on "(x,y,time)".
 
 # Kafka Message Publisher (dummy_producer.py)
 
