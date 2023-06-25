@@ -239,3 +239,53 @@ Note: You may need to modify the code and functions to suit your specific use ca
 That's the README file for the clustering module script.
 
 
+
+```
+# Scheduling Module Unit Test
+
+This repository contains a unit test script for the `time_scheduling_function` in the `scheduling_module`. The unit test script is written in Python using the `unittest` framework.
+
+## Getting Started
+
+To get started with the unit test, follow these steps:
+
+1. Clone the repository to your local machine.
+2. Ensure that you have Python installed on your machine.
+3. Make sure the `scheduling_module` and its dependencies are in the same directory as the test script.
+
+## Running the Unit Test
+
+To run the unit test, execute the test script from the command line. The `unittest` framework will automatically discover and run the test cases defined within the script.
+
+Run the following command to execute the test script:
+
+```
+python test_scheduling_module.py
+```
+
+Replace `test_scheduling_module.py` with the name of your test script file.
+
+The framework will provide detailed information about the test results, including which tests passed and which ones failed, along with any error messages or exceptions raised during the test execution.
+
+## Test Cases
+
+The unit test script includes the following test cases:
+
+- `test_Yearly`: Tests the scheduling function for yearly scheduling.
+- `test_Monthly`: Tests the scheduling function for monthly scheduling.
+- `test_Weekly`: Tests the scheduling function for weekly scheduling.
+- `test_Daily`: Tests the scheduling function for daily scheduling.
+- `test_wrong_input_data_2` to `test_wrong_input_data_9`: Tests for various incorrect input data formats.
+- `test_negative_input_data_1` to `test_negative_input_data_8`: Tests for negative input data.
+
+Each test case verifies a specific aspect of the scheduling function's behavior.
+
+## Contributing
+
+Contributions to this repository are welcome. If you find any issues or want to suggest improvements, please open an issue or submit a pull request.
+
+## License
+
+This repository is licensed under the [MIT License](LICENSE).
+```
+
