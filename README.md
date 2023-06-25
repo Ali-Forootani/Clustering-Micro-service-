@@ -288,4 +288,6 @@ Contributions to this repository are welcome. If you find any issues or want to 
 
 This repository is licensed under the [MIT License](LICENSE).
 ```
+## Inquiry
 
+You can contact me via: aliforootani@ieee.org
